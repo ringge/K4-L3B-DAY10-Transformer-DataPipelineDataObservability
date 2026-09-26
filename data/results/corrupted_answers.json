@@ -23,7 +23,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model answer is blank and does not describe the paper."
+      "reasoning": "The model answer is blank and provides no information about the paper."
     }
   },
   {
@@ -52,7 +52,7 @@
     "judge": {
       "score": 3,
       "correct": false,
-      "reasoning": "The answer includes the reference\u2019s core description, but adds the unsupported claim that the paper is an \u201cextended empirical study\u201d and contains a typo (\u201cilent\u201d)."
+      "reasoning": "The answer captures the paper\u2019s core topic, but adds an unsupported claim that it is an \u201cextended empirical study\u201d and contains a typo (\u201cilent\u201d instead of \u201csilent\u201d)."
     }
   },
   {
@@ -108,7 +108,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer exactly matches the reference authors: Bao Do and Linh Ngo."
+      "reasoning": "The model answer matches the reference authors: Bao Do and Linh Ngo."
     }
   },
   {
@@ -135,7 +135,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer exactly matches the reference authors, Tuan Phan and Mai Bui."
+      "reasoning": "The model answer exactly matches the reference authors: Tuan Phan and Mai Bui."
     }
   },
   {
@@ -191,7 +191,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model gives 2026-06-07, but the reference publication date is 2026-06-25."
+      "reasoning": "The model gives 2026-06-07, but the reference date is 2026-06-25."
     }
   },
   {
@@ -220,7 +220,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model gives 2026-06-08, but the reference publication date is 2026-07-19."
+      "reasoning": "The model gives 2026-06-08, which differs from the reference publication date of 2026-07-19."
     }
   },
   {
@@ -249,7 +249,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer matches the reference categories exactly: Information Retrieval and Natural Language Processing."
+      "reasoning": "The model answer exactly matches the reference categories: Information Retrieval and Natural Language Processing."
     }
   },
   {
