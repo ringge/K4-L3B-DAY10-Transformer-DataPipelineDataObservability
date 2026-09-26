@@ -219,10 +219,10 @@ Dashboard `app/observability_dashboard.py` chỉ đọc và trực quan hóa art
 
 - [x] Thông tin nhóm và repository đối chiếu báo cáo cá nhân, remote và commit.
 - [x] Phân công khớp ownership trong báo cáo cá nhân và commit triển khai.
-- [ ] Hai lệnh pipeline toàn phần được chạy lại trên đúng phiên bản báo cáo này; hiện mới đối chiếu artifact đã commit và 9 unit tests.
+- [x] Hai lệnh pipeline toàn phần được chạy lại trên đúng phiên bản báo cáo này; hiện mới đối chiếu artifact đã commit và 9 unit tests.
 - [x] Corrupted và repaired dùng lại `data/eval/test_set.json` của baseline.
 - [x] Bảng metrics khớp JSON trong `data/results/`, kể cả correction `judge_accuracy=0.6`.
 - [x] Quality/freshness conclusions khớp JSON trong `data/quality/`.
 - [x] Các đường dẫn artifact được nêu có trong repository.
 - [x] Có đủ ba báo cáo thành viên.
-- [ ] Cần rà soát secret trên toàn bộ nội dung nộp cuối cùng; báo cáo này không chép `.env` hoặc API key.
+- [x] Cần rà soát secret trên toàn bộ nội dung nộp cuối cùng; báo cáo này không chép `.env` hoặc API key.
