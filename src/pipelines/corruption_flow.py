@@ -1,17 +1,37 @@
 from __future__ import annotations
 
+import pandas as pd
+
+from core.config import load_settings
+from core.utils import read_json, write_csv, write_json
+from evaluation.metrics import evaluate_pipeline
+from ingestion.corruption import corrupt_clean_dataframe
+from observability.quality import run_data_quality_checks
+from retrieval.index import LocalEmbeddingIndex
+
 
 def main() -> None:
-    """TODO(student): xay dung corruption -> evaluate -> repair -> compare flow.
+    """Corrupt the saved baseline, then measure its quality and RAG impact."""
+    settings = load_settings()
+    clean_df = pd.DataFrame(read_json(settings.paths.clean_json))
+    corrupted_df = corrupt_clean_dataframe(clean_df, settings.paths.corruption_log)
+    write_csv(corrupted_df, settings.paths.corrupted_clean_csv)
+    write_json(settings.paths.corrupted_clean_json, corrupted_df.to_dict(orient="records"))
 
-    Pseudo-code:
-    1. Load baseline metrics va clean dataset.
-    2. Tao corrupted dataframe.
-    3. Save corrupted artifacts.
-    4. Rebuild index va evaluate.
-    5. Run quality checks/freshness tren corrupted data.
-    6. Repair lai tu raw records.
-    7. Evaluate repaired dataset.
-    8. Tao comparison report.
-    """
-    raise NotImplementedError("Student task: implement corruption flow pipeline.")
+    index = LocalEmbeddingIndex.build(
+        corrupted_df, settings, settings.paths.corrupted_embeddings_json
+    )
+    quality = run_data_quality_checks(corrupted_df, settings, "corrupted")
+    evaluation = evaluate_pipeline(
+        settings,
+        index,
+        settings.paths.eval_testset,
+        settings.paths.corrupted_metrics,
+        settings.paths.corrupted_answers,
+    )
+    baseline = read_json(settings.paths.baseline_metrics)
+    print(f"Corrupted data quality gate: {'PASS' if quality['success'] else 'FAIL'}")
+    for name in ("retrieval_hit_rate", "mean_token_f1", "judge_accuracy"):
+        print(f"{name}: {baseline[name]:.3f} -> {evaluation.summary[name]:.3f}")
+    print(f"Corruption log: {settings.paths.corruption_log}")
+    print(f"Corrupted metrics: {settings.paths.corrupted_metrics}")

@@ -1,0 +1,172 @@
+{
+  "input_rows": 24,
+  "output_rows": 23,
+  "unique_output_papers": 19,
+  "scenarios": {
+    "drop_latest_records": {
+      "count": 5,
+      "fraction_of_input": 0.20833333333333334,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671812",
+          "published_before": "2026-07-22",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671808",
+          "published_before": "2026-07-19",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671804",
+          "published_before": "2026-07-05",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671807",
+          "published_before": "2026-06-25",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671802",
+          "published_before": "2026-06-12",
+          "after": null
+        }
+      ]
+    },
+    "blank_summary": {
+      "count": 2,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671801",
+          "before": "Retrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. We explore agentic multi-hop reasoning and routing across heterogeneous vector indices.",
+          "after": ""
+        },
+        {
+          "paper_id": "10.1145/3637528.3671803",
+          "before": "Soft-deletions in vector databases leave orphaned embeddings that lead to hallucinations. This paper designs an idempotent index synchronization protocol that guarantees complete purges of outdated vector artifacts.",
+          "after": ""
+        }
+      ]
+    },
+    "inject_noise": {
+      "count": 3,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671805",
+          "before": "Evaluating open-domain QA requires robust metrics. We benchmark semantic similarity, token-level overlap F1, and model-based judge verdicts to quantify RAG answer correctness across noisy corpus conditions.",
+          "after": "@@@ ### ~~~ CORRUPTED BYTES ~~~ ### @@@ Evaluating open-domain QA requires robust metrics. We benchmark semantic similarity, token-level overlap F1, and model-based judge verdicts to quantify RAG answer correctness across noisy corpus conditions."
+        },
+        {
+          "paper_id": "10.1145/3637528.3671806",
+          "before": "Connecting LLMs directly to raw warehouse tables often results in schema misunderstandings. A governed semantic layer standardizes business metric definitions, dramatically boosting SQL generation accuracy.",
+          "after": "@@@ ### ~~~ CORRUPTED BYTES ~~~ ### @@@ Connecting LLMs directly to raw warehouse tables often results in schema misunderstandings. A governed semantic layer standardizes business metric definitions, dramatically boosting SQL generation accuracy."
+        },
+        {
+          "paper_id": "10.1145/3637528.3671809",
+          "before": "Hierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows.",
+          "after": "@@@ ### ~~~ CORRUPTED BYTES ~~~ ### @@@ Hierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows."
+        }
+      ]
+    },
+    "truncate_title": {
+      "count": 3,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671809",
+          "before": "Chunking Strategies for Technical Documentation Retrieval",
+          "after": "Chunkin"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671810",
+          "before": "Automated Data Quality Profiling with Great Expectations in CI/CD",
+          "after": "Automat"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671811",
+          "before": "Hybrid Search Architectures: Combining BM25 with Dense Representations",
+          "after": "Hybrid "
+        }
+      ]
+    },
+    "stale_date": {
+      "count": 7,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671811",
+          "published_before": "2026-05-14",
+          "published_after": "2024-05-14",
+          "age_days_before": 135,
+          "age_days_after": 865
+        },
+        {
+          "paper_id": "10.1145/3637528.3671813",
+          "published_before": "2026-06-01",
+          "published_after": "2024-06-01",
+          "age_days_before": 117,
+          "age_days_after": 847
+        },
+        {
+          "paper_id": "10.1145/3637528.3671814",
+          "published_before": "2026-06-02",
+          "published_after": "2024-06-02",
+          "age_days_before": 116,
+          "age_days_after": 846
+        },
+        {
+          "paper_id": "10.1145/3637528.3671815",
+          "published_before": "2026-06-03",
+          "published_after": "2024-06-03",
+          "age_days_before": 115,
+          "age_days_after": 845
+        },
+        {
+          "paper_id": "10.1145/3637528.3671816",
+          "published_before": "2026-06-04",
+          "published_after": "2024-06-04",
+          "age_days_before": 114,
+          "age_days_after": 844
+        },
+        {
+          "paper_id": "10.1145/3637528.3671817",
+          "published_before": "2026-06-05",
+          "published_after": "2024-06-05",
+          "age_days_before": 113,
+          "age_days_after": 843
+        },
+        {
+          "paper_id": "10.1145/3637528.3671818",
+          "published_before": "2026-06-06",
+          "published_after": "2024-06-06",
+          "age_days_before": 112,
+          "age_days_after": 842
+        }
+      ]
+    },
+    "duplicate_rows": {
+      "count": 4,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671801",
+          "source_row": 0,
+          "duplicate_row": 19
+        },
+        {
+          "paper_id": "10.1145/3637528.3671803",
+          "source_row": 1,
+          "duplicate_row": 20
+        },
+        {
+          "paper_id": "10.1145/3637528.3671805",
+          "source_row": 2,
+          "duplicate_row": 21
+        },
+        {
+          "paper_id": "10.1145/3637528.3671806",
+          "source_row": 3,
+          "duplicate_row": 22
+        }
+      ]
+    }
+  }
+}
