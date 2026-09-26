@@ -14,7 +14,7 @@
 | Evaluation questions | 10 | 10 | 10 |
 | Retrieval hit rate | 100.0% | 60.0% | 100.0% |
 | Mean token F1 | 1.000 | 0.579 | 1.000 |
-| Judge accuracy | 100.0% | 50.0% | 100.0% |
+| Judge accuracy | 100.0% | 60.0% | 100.0% |
 | Mean judge score / 5 | 5.000 | 3.200 | 5.000 |
 | Quality gate | PASS | FAIL | PASS |
 | GX checks passed | 7/7 | 5/7 | 7/7 |

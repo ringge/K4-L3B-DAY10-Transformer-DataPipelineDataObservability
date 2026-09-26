@@ -23,7 +23,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model answer is blank and provides no information about the paper."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -51,8 +51,8 @@
     "token_f1": 0.7878787878787878,
     "judge": {
       "score": 3,
-      "correct": false,
-      "reasoning": "The answer captures the paper\u2019s core topic, but adds an unsupported claim that it is an \u201cextended empirical study\u201d and contains a typo (\u201cilent\u201d instead of \u201csilent\u201d)."
+      "correct": true,
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -79,7 +79,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model answer is empty and does not describe the paper\u2019s topic."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -108,7 +108,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer matches the reference authors: Bao Do and Linh Ngo."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -135,7 +135,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer exactly matches the reference authors: Tuan Phan and Mai Bui."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -162,7 +162,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer exactly matches the reference authors, Huy Dinh and Trang Vo."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -191,7 +191,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model gives 2026-06-07, but the reference date is 2026-06-25."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -220,7 +220,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "The model gives 2026-06-08, which differs from the reference publication date of 2026-07-19."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -249,7 +249,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer exactly matches the reference categories: Information Retrieval and Natural Language Processing."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   },
   {
@@ -278,7 +278,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "The model answer exactly matches the reference categories: Data Quality and DevOps."
+      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
     }
   }
 ]
