@@ -113,7 +113,7 @@ Lệnh kiểm thử đã chạy trong repository hiện tại:
 | --- | ---: | ---: | ---: | --- |
 | `retrieval_hit_rate` | 100% | 60% | 100% | Bốn câu hỏi mất ground-truth document khỏi kết quả retrieval. |
 | `mean_token_f1` | 1.000 | 0.579 | 1.000 | Corruption làm giảm chất lượng trả lời trên bộ test. |
-| `judge_accuracy` | 100% | 50% | 100% | Năm trên mười câu bị judge đánh giá sai ở trạng thái corrupted. |
+| `judge_accuracy` | 100% | 60% | 100% | Bốn trên mười câu bị judge đánh giá sai ở trạng thái corrupted. |
 | `mean_judge_score` | 5.000/5 | 3.200/5 | 5.000/5 | Repaired trở về mức baseline trên bộ test. |
 | Quality checks | PASS, 7/7 GX | FAIL, 5/7 GX | PASS, 7/7 GX | Corrupted fail ở ID duy nhất và độ dài summary; freshness cũng fail. |
 | Freshness status | PASS, 1/24 cũ (4.2%) | FAIL, 9/23 cũ (39.1%) | PASS, 1/24 cũ (4.2%) | Corruption xóa record mới và lùi ngày 7 record. |

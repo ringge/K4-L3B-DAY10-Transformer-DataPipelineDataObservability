@@ -116,7 +116,7 @@ Giải thích ngắn gọn bằng lời của bạn:
 | ---------------------- | -------: | --------: | -------: | ------------------------- |
 | `retrieval_hit_rate` | 1.000 | 0.600 | 1.000 | Baseline và repaired đạt toàn bộ hit; corrupted giảm 40 điểm phần trăm. Hai cột Phase 2 là số liệu artifact nhóm, không thuộc ownership cá nhân. |
 | `mean_token_f1`      | 1.000 | 0.579 | 1.000 | Answer overlap giảm rõ ở trạng thái corrupted và trở lại baseline sau repair. |
-| `judge_accuracy`     | 1.000 | 0.500 | 1.000 | Judge đúng 10/10 baseline, 5/10 corrupted, 10/10 repaired theo metrics đã lưu. |
+| `judge_accuracy`     | 1.000 | 0.600 | 1.000 | Judge đúng 10/10 baseline, 6/10 corrupted, 10/10 repaired theo metrics đã lưu. |
 | `mean_judge_score`   | 5.000 | 3.200 | 5.000 | Điểm trung bình giảm 1.8 điểm khi corpus corrupted. |
 | Quality checks         | PASS (7/7) | FAIL (5/7) | PASS (7/7) | Lấy từ baseline/corruption/repaired quality artifacts của nhóm. |
 | Freshness status       | PASS (4.2%) | FAIL (39.1%) | PASS (4.2%) | Corrupted vượt ngưỡng stale ratio 25%; repaired quay về baseline. |
