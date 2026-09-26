@@ -1,0 +1,92 @@
+[
+  {
+    "id": "test-01",
+    "question_type": "summary",
+    "question": "What is the paper 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' about?",
+    "ground_truth": "Retrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801"
+    ]
+  },
+  {
+    "id": "test-02",
+    "question_type": "summary",
+    "question": "What is the paper 'Data Observability and Quality Gates for Production RAG Systems' about?",
+    "ground_truth": "Silent data corruption in RAG pipelines degrades LLM answer faithfulness without throwing runtime errors.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671802"
+    ]
+  },
+  {
+    "id": "test-03",
+    "question_type": "summary",
+    "question": "What is the paper 'Mitigating Ghost Vectors in Dense Retrieval via Idempotent Indexing' about?",
+    "ground_truth": "Soft-deletions in vector databases leave orphaned embeddings that lead to hallucinations.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671803"
+    ]
+  },
+  {
+    "id": "test-04",
+    "question_type": "authors",
+    "question": "Who authored 'Freshness SLAs for Real-Time LLM Knowledge Augmentation'?",
+    "ground_truth": "Bao Do, Linh Ngo",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671804"
+    ]
+  },
+  {
+    "id": "test-05",
+    "question_type": "authors",
+    "question": "Who authored 'Evaluating Retrieval Precision with Token F1 and LLM Judges'?",
+    "ground_truth": "Tuan Phan, Mai Bui",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671805"
+    ]
+  },
+  {
+    "id": "test-06",
+    "question_type": "authors",
+    "question": "Who authored 'Semantic Layer Integration for Agentic Text-to-SQL Pipelines'?",
+    "ground_truth": "Huy Dinh, Trang Vo",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671806"
+    ]
+  },
+  {
+    "id": "test-07",
+    "question_type": "date",
+    "question": "When was 'Synthetic Corruption Testing: Stress-Testing Vector Search Robustness' published?",
+    "ground_truth": "2026-06-25",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671807"
+    ]
+  },
+  {
+    "id": "test-08",
+    "question_type": "date",
+    "question": "When was 'Multi-Agent Consensus for High-Stakes Fact Verification' published?",
+    "ground_truth": "2026-07-19",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671808"
+    ]
+  },
+  {
+    "id": "test-09",
+    "question_type": "categories",
+    "question": "What categories are associated with 'Chunking Strategies for Technical Documentation Retrieval'?",
+    "ground_truth": "Information Retrieval, Natural Language Processing",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671809"
+    ]
+  },
+  {
+    "id": "test-10",
+    "question_type": "categories",
+    "question": "What categories are associated with 'Automated Data Quality Profiling with Great Expectations in CI/CD'?",
+    "ground_truth": "Data Quality, DevOps",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671810"
+    ]
+  }
+]
